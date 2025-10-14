@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Flow - Produtividade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Focus Flow</h1>
+        <nav>
+            <button onclick="mostrarPagina('principal')">Início</button>
+            <button onclick="mostrarPagina('calendario')">Calendário/Tarefas</button>
+            <button onclick="mostrarPagina('temporizador')">Temporizador Pomodoro</button>
+            <button onclick="mostrarPagina('bloqueio')">Bloqueio de Sites</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="principal" class="pagina ativa">
+            <h2>Bem-vindo ao Focus Flow!</h2>
+            <p>Sua plataforma para maximizar o foco e a produtividade. Use o temporizador para sessões focadas e o calendário para organizar suas tarefas.</p>
+            <div class="card">
+                <h3>Acesso Rápido</h3>
+                <p>O foco é seu superpoder. Escolha uma ferramenta para começar!</p>
+                <div class="botoes-acao">
+                    <button onclick="mostrarPagina('temporizador')">Iniciar Temporizador</button>
+                    <button onclick="mostrarPagina('calendario')">Ver Tarefas</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendario" class="pagina">
+            <h2>Calendário e Tarefas</h2>
+            <p>Organize suas atividades diárias e semanais.</p>
+            <div class="card">
+                <h3>Minhas Tarefas</h3>
+                <input type="text" placeholder="Adicionar nova tarefa...">
+                <button>Adicionar</button>
+                <ul>
+                    <li>[ ] Tarefa de Exemplo - Prazo: Hoje</li>
+                    <li>[ ] Agendar reunião - Prazo: 14/10</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="temporizador" class="pagina">
+            <h2>Temporizador Pomodoro</h2>
+            <p>Trabalhe em blocos de tempo focado, seguidos por pausas curtas.</p>
+            <div class="card temporizador-box">
+                <div id="tempo-restante">25:00</div>
+                <p id="status-timer">Tempo de Foco</p>
+                <div class="botoes-acao">
+                    <button id="iniciar-pausar">Iniciar</button>
+                    <button id="resetar">Resetar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bloqueio" class="pagina">
+            <h2>Configuração de Bloqueio de Sites</h2>
+            <p>Esta funcionalidade requer uma extensão de navegador ou software específico. Abaixo está a interface conceitual.</p>
+            <div class="card">
+                <h3>Bloquear Distrações</h3>
+                <p>Lista de sites a bloquear durante as sessões do temporizador (Ex: facebook.com, youtube.com):</p>
+                <textarea rows="4" placeholder="Digite um site por linha..."></textarea>
+                <label><input type="checkbox"> Bloquear sites agora</label>
+                <button>Salvar Configurações</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Focus Flow | Seu assistente de produtividade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
