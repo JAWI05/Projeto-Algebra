@@ -25,11 +25,5 @@ O objetivo principal é mitigar distrações e centralizar ferramentas de produt
 - **📊 Monitoramento de Tempo:** Estatísticas de navegação por domínio.
 - **💾 Persistência:** Configurações mantidas entre sessões via Local Storage.
 
-## 🚀 Instalação
-1. Clone o repositório: `git clone [URL_DO_REPO]`
-2. Acesse `chrome://extensions/` no navegador.
-3. Ative o **Modo do Desenvolvedor**.
-4. Clique em **Carregar sem compactação** e selecione a pasta do projeto.
-
 ---
 Desenvolvido por **Júlia** - Estudante de Engenharia de Computação (ESEG)
